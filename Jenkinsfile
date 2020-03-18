@@ -16,7 +16,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building 123..'
-				dir
             }
         }
         stage('Test') {

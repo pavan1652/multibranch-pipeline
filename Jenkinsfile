@@ -9,7 +9,7 @@ pipeline {
 		stage('checkout') {
 			steps {
 				echo "checkout"
-				checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+				checkout([$class: 'GitSCM', branches: [[name: env.BRANCH_NAME]],
 				userRemoteConfigs: [[url: 'https://github.com/pavan1652/ansibletest.git']]])
 			}
         }

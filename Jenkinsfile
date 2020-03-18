@@ -19,6 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+				sh 'echo printnv'
                 echo 'Deploying....'
             }
         }

@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-			if (env.BRANCH_NAME = 'develop') {
+			if (env.BRANCH_NAME == 'develop') {
 				echo 'in develop branch'
 			} else {
 				echo 'Pulling...' + env.BRANCH_NAME

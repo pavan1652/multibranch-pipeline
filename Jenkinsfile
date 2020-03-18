@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-				sh 'echo printenv'
+				sh 'printenv'
                 echo 'Deploying....'
             }
         }

@@ -32,6 +32,7 @@ pipeline {
 				echo 'Pulling...' + env.DISABLE_AUTH
 				echo 'Pulling...' + env.DB_ENGINE
                 echo 'Deploying....'
+				}
             }
         }
     }

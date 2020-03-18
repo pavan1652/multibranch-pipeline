@@ -25,13 +25,15 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-			if (env.BRANCH_NAME == 'develop') {
-				echo 'in develop branch'
-			} else {
-				echo 'Pulling...' + env.BRANCH_NAME
-				echo 'Pulling...' + env.DISABLE_AUTH
-				echo 'Pulling...' + env.DB_ENGINE
-                echo 'Deploying....'
+				script {
+					if (env.BRANCH_NAME == 'develop') {
+						echo 'in develop branch'
+					} else {
+						echo 'Pulling...' + env.BRANCH_NAME
+						echo 'Pulling...' + env.DISABLE_AUTH
+						echo 'Pulling...' + env.DB_ENGINE
+						echo 'Deploying....'
+					}
 				}
             }
         }

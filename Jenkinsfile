@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-				sh 'printenv'
+				echo 'Pulling...' + env.BRANCH_NAME
                 echo 'Deploying....'
             }
         }

@@ -16,6 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building 123..'
+				echo 'checking auto trigger'
             }
         }
         stage('Test') {

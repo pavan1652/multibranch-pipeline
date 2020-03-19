@@ -21,6 +21,7 @@ pipeline {
 				echo 'adding new line2'
 				echo 'adding new line3'
 				echo 'adding new line4'
+				echo 'adding new line5'
             }
         }
         stage('Test') {
